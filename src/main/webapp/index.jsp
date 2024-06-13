@@ -15,7 +15,7 @@
     <br/><br/>
     <a class="btn btn-info" href="product/list">liste Produits</a>
     <br/><br/>
-    <a class="btn btn-info" href="formulaire">Exercice4</a>
+    <a class="btn btn-info" href="login">Login</a>
 </div>
 
 <%--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>--%>
