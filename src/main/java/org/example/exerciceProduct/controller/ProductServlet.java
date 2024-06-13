@@ -106,7 +106,7 @@ public class ProductServlet extends HttpServlet {
     protected void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         productService.deleteProduct(id);
-        response.sendRedirect("list");
+        response.sendRedirect(request.getContextPath() + "/product/list");
     }
 
     protected void showDetails(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

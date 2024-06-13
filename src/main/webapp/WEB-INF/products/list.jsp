@@ -47,8 +47,10 @@
                            class="btn btn-outline-info"><i class="bi bi-eye"></i> View</a>
                         <a href="${pageContext.request.contextPath}/product/detail?id=<%= p.getId() %>&mode=edit"
                            class="btn btn-outline-warning"><i class="bi bi-pencil"></i> Update</a>
-                        <a href="${pageContext.request.contextPath}/product/detail?id=<%= p.getId() %>&mode=delete"
-                           class="btn btn-outline-danger"><i class="bi bi-trash"></i> Delete</a>
+                        <form action="${pageContext.request.contextPath}/product/delete" method="post" name="deleteForm_<%= p.getId() %>">
+                            <input type="hidden" name="id" value="<%= p.getId() %>">
+                            <button type="submit" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this product?');"><i class="bi bi-trash"></i> Delete</button>
+                        </form>
                     </td>
                 </tr>
                 <% } %>

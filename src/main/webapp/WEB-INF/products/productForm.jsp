@@ -26,12 +26,12 @@
                 <div class="mb-3">
                     <label for="brand" class="form-label">Brand:</label>
                     <input type="text" name="brand" id="brand" class="form-control"
-                           value="<%= product.getBrand() %>" <% if (mode.equals("update")) { %> required <% } %> readonly>
+                           value="<%= product.getBrand() %>"  required>
                 </div>
                 <div class="mb-3">
                     <label for="reference" class="form-label">Reference:</label>
                     <input type="text" name="reference" id="reference" class="form-control"
-                           value="<%= product.getReference() %>" <% if (mode.equals("update")) { %> readonly <% } %> required>
+                           value="<%= product.getReference() %>"  required>
                 </div>
                 <div class="mb-3">
                     <label for="purchaseDate" class="form-label">Purchase Date:</label>
